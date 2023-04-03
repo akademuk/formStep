@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Слон</title>
+</head>
+<body>
+  <div class="banner">
+    <div class="logotype">
+      <a href="#">
+        <img src="img/logo.png" alt="Слон">
+      </a>
+    </div>
+    <div class="bannerContent bannerContentPage">
+      <div class="bannerContentLeft">
+        <h1>Отримай добірку нерухомості в  
+          <span>alanya</span>
+        </h1>
+        <p>Туреччина 
+          <img src="img/flag.svg" alt="Туреччина">
+        </p>
+        <div class="bannerContentLeftContainer">
+          <div class="bannerContentLeftContainerSection">
+            <span>Вартість:</span>
+            <p>від $90 000</p>
+          </div>
+          <div class="bannerContentLeftContainerSection">
+            <span>Дохід від продажу:</span>
+            <p>до $30 000</p>
+          </div>
+          <div class="bannerContentLeftContainerSection">
+            <span>Дохід з оренди:</span>
+            <p>до $9 000 на рік</p>
+          </div>
+          <div class="bannerContentLeftContainerSection">
+            <span>Розстрочка:</span>
+            <p>безвідсоткова</p>
+          </div>
+        </div>
+      </div>
+      <div class="bannerContentRight formStepContainer">
+        <form id="form" method="post" action="form.php">
+
+          <!--Прогресс бар-->
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+            </div>
+            <span class="step-number">1/1</span>
+          </div>
+      
+          <!--З якою метою плануєте купівлю нерухомості?-->
+          <div id="step1" class="styleContainer">
+            <h2>З якою метою плануєте купівлю нерухомості?</h2>
+            <div class="formContainerFlex">
+              <div class="radio">
+                <label><input type="radio" name="purposePurchase" value="Для інвестування" class="required">
+                <div class="formStepContent">
+                  <div class="formStepContentImg">
+                    <img src="img/purposePurchase1.png" alt="Для інвестування">
+                  </div>
+                  <div class="positionLike">
+                    <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="21" cy="21" r="19" fill="#D9D9D9" stroke="white" stroke-width="4"/>
+                      <path d="M11 22.5714L16.7143 28.2857L31 14" stroke="#A5A5A5" stroke-width="2.14286" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>  
+                  </div>
+                  <h3>Для інвестування</h3>
+                </div>
+                </label>
+              </div>
+              <div class="radio">
+                <label><input type="radio" name="purposePurchase" value="Для життя" class="required">
+                  <div class="formStepContent">
+                    <div class="formStepContentImg">
+                      <img src="img/purposePurchase2.png" alt="Для життя">
+                    </div>
+                    <div class="positionLike">
+                      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="21" cy="21" r="19" fill="#D9D9D9" stroke="white" stroke-width="4"/>
+                        <path d="M11 22.5714L16.7143 28.2857L31 14" stroke="#A5A5A5" stroke-width="2.14286" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>  
+                    </div>
+                    <h3>Для життя</h3>
+                  </div>
+                </label>
+              </div>
+              <div class="radio">
+                <label><input type="radio" name="purposePurchase" value="Для тимчасового перебування" class="required">
+                  <div class="formStepContent">
+                    <div class="formStepContentImg">
+                      <img src="img/purposePurchase3.png" alt="Для тимчасового перебування">
+                    </div>
+                    <div class="positionLike">
+                      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="21" cy="21" r="19" fill="#D9D9D9" stroke="white" stroke-width="4"/>
+                        <path d="M11 22.5714L16.7143 28.2857L31 14" stroke="#A5A5A5" stroke-width="2.14286" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>  
+                    </div>
+                    <h3>Для тимчасового перебування</h3>
+                  </div>
+                </label>
+              </div>
+              <div class="radio">
+                <label><input type="radio" name="purposePurchase" value="Для дитини/студента" class="required">
+                  <div class="formStepContent">
+                    <div class="formStepContentImg">
+                      <img src="img/purposePurchase4.png" alt="Для тимчасового перебування">
+                    </div>
+                    <div class="positionLike">
+                      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="21" cy="21" r="19" fill="#D9D9D9" stroke="white" stroke-width="4"/>
+                        <path d="M11 22.5714L16.7143 28.2857L31 14" stroke="#A5A5A5" stroke-width="2.14286" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>  
+                    </div>
+                    <h3>Для дитини/студента</h3>
+                  </div>
+                </label>
+              </div>
+            </div>
+            <button type="button" class="nextButton" disabled>Далі
+              <img src="img/btnStep.png" alt="">
+            </button>
+          </div>
+      
+          <!--Оберіть тип нерухомості, який вас цікавить:-->
+          <div id="step2" class="styleContainer" style="display: none;">
+            <h2>Оберіть тип нерухомості, який вас цікавить:</h2>
+            <div class="formContainerFlex">
+              <div class="radio">
+                <label><input type="radio" name="typeOfRealEstate" value="Квартира/Апартаменти" class="required">
+                <div class="formStepContent">
+                  <div class="formStepContentImg">
+                    <img src="img/typeOfRealEstate1.png" alt="Квартира/Апартаменти">
+                  </div>
+                  <div class="positionLike">
+                    <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="21" cy="21" r="19" fill="#D9D9D9" stroke="white" stroke-width="4"/>
+                      <path d="M11 22.5714L16.7143 28.2857L31 14" stroke="#A5A5A5" stroke-width="2.14286" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>  
+                  </div>
+                  <h3>Квартира/Апартаменти</h3>
+                </div>
+                </label>
+              </div>
+              <div class="radio">
+                <label><input type="radio" name="typeOfRealEstate" value="Віла/Пентхаус" class="required">
+                  <div class="formStepContent">
+                    <div class="formStepContentImg">
+                      <img src="img/typeOfRealEstate2.png" alt="Віла/Пентхаус">
+                    </div>
+                    <div class="positionLike">
+                      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="21" cy="21" r="19" fill="#D9D9D9" stroke="white" stroke-width="4"/>
+                        <path d="M11 22.5714L16.7143 28.2857L31 14" stroke="#A5A5A5" stroke-width="2.14286" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>  
+                    </div>
+                    <h3>Віла/Пентхаус</h3>
+                  </div>
+                </label>
+              </div>
+              <div class="radio">
+                <label><input type="radio" name="typeOfRealEstate" value="Земельна ділянка" class="required">
+                  <div class="formStepContent">
+                    <div class="formStepContentImg">
+                      <img src="img/typeOfRealEstate3.png" alt="Земельна ділянка">
+                    </div>
+                    <div class="positionLike">
+                      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="21" cy="21" r="19" fill="#D9D9D9" stroke="white" stroke-width="4"/>
+                        <path d="M11 22.5714L16.7143 28.2857L31 14" stroke="#A5A5A5" stroke-width="2.14286" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>  
+                    </div>
+                    <h3>Земельна ділянка</h3>
+                  </div>
+                </label>
+              </div>
+              <div class="radio">
+                <label><input type="radio" name="typeOfRealEstate" value="Комерційна нерухомість" class="required">
+                  <div class="formStepContent">
+                    <div class="formStepContentImg">
+                      <img src="img/typeOfRealEstate4.png" alt="Комерційна нерухомість">
+                    </div>
+                    <div class="positionLike">
+                      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="21" cy="21" r="19" fill="#D9D9D9" stroke="white" stroke-width="4"/>
+                        <path d="M11 22.5714L16.7143 28.2857L31 14" stroke="#A5A5A5" stroke-width="2.14286" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>  
+                    </div>
+                    <h3>Комерційна нерухомість</h3>
+                  </div>
+                </label>
+              </div>
+            </div>
+            <div class="btnContainer">
+              <button type="button" class="backButton" disabled>Назад</button>
+              <button type="button" class="nextButton" disabled>Далі
+                <img src="img/btnStep.png" alt="">
+              </button>
+            </div>
+          </div>
+      
+          <!--Оберіть відповідне планування:-->
+          <div id="step3" class="styleContainer" style="display: none;">
+            <h2>Оберіть відповідне планування:</h2>
+            <div class="formContainerTabs">
+              <div class="formContainerFlex">
+                <div class="radio">
+                  <label><input type="radio" name="planning" value="1+1 (двокімнатна квартира)" class="required">
+                  <div class="formStepContent formStepContentBorder">
+                    <div class="positionLike positionLikeColumn">
+                      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="21" cy="21" r="19" fill="#D9D9D9" stroke="white" stroke-width="4"/>
+                        <path d="M11 22.5714L16.7143 28.2857L31 14" stroke="#A5A5A5" stroke-width="2.14286" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>  
+                    </div>
+                    <h3>1+1 (двокімнатна квартира)</h3>
+                  </div>
+                  </label>
+                </div>
+                <div class="radio">
+                  <label><input type="radio" name="planning" value="2+1 (трикімнатна квартира)" class="required">
+                    <div class="formStepContent formStepContentBorder">
+                      <div class="positionLike positionLikeColumn">
+                        <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="21" cy="21" r="19" fill="#D9D9D9" stroke="white" stroke-width="4"/>
+                          <path d="M11 22.5714L16.7143 28.2857L31 14" stroke="#A5A5A5" stroke-width="2.14286" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>  
+                      </div>
+                      <h3>2+1 (трикімнатна квартира)</h3>
+                    </div>
+                  </label>
+                </div>
+                <div class="radio">
+                  <label><input type="radio" name="planning" value="3+1 (чотирикімнатна квартира)" class="required">
+                    <div class="formStepContent formStepContentBorder">
+                      <div class="positionLike positionLikeColumn">
+                        <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="21" cy="21" r="19" fill="#D9D9D9" stroke="white" stroke-width="4"/>
+                          <path d="M11 22.5714L16.7143 28.2857L31 14" stroke="#A5A5A5" stroke-width="2.14286" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>  
+                      </div>
+                      <h3>3+1 (чотирикімнатна квартира)</h3>
+                    </div>
+                  </label>
+                </div>
+                <div class="radio">
+                  <label><input type="radio" name="planning" value="4+1 і більше" class="required">
+                    <div class="formStepContent formStepContentBorder">
+                      <div class="positionLike positionLikeColumn">
+                        <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="21" cy="21" r="19" fill="#D9D9D9" stroke="white" stroke-width="4"/>
+                          <path d="M11 22.5714L16.7143 28.2857L31 14" stroke="#A5A5A5" stroke-width="2.14286" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>  
+                      </div>
+                      <h3>4+1 і більше</h3>
+                    </div>
+                  </label>
+                </div>
+              </div>
+              <div class="formContainerFlexImg">
+                <img src="img/planning.png" alt="planning">
+              </div>
+            </div>
+            <div class="btnContainer">
+              <button type="button" class="backButton" disabled>Назад</button>
+              <button type="button" class="nextButton" disabled>Далі
+                <img src="img/btnStep.png" alt="">
+              </button>
+            </div>
+          </div>
+      
+          <!--На який бюджет розраховуєте?-->
+          <div id="step4" class="styleContainer" style="display: none;">
+            <h2>На який бюджет розраховуєте?</h2>
+            <div class="formContainerFlex">
+              <div class="radio">
+                <label><input type="radio" name="budget" value="від 100 000 € до 150 000 €" class="required">
+                  <div class="formStepContent formStepContentBorder">
+                    <div class="positionLike positionLikeColumn">
+                      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="21" cy="21" r="19" fill="#D9D9D9" stroke="white" stroke-width="4"/>
+                        <path d="M11 22.5714L16.7143 28.2857L31 14" stroke="#A5A5A5" stroke-width="2.14286" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>  
+                    </div>
+                  <h3>від 100 000 € <br>
+                    до 150 000 €</h3>
+                </div>
+                </label>
+              </div>
+              <div class="radio">
+                <label><input type="radio" name="budget" value="від 200 000 € до 250 000 €" class="required">
+                  <div class="formStepContent formStepContentBorder">
+                    <div class="positionLike positionLikeColumn">
+                      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="21" cy="21" r="19" fill="#D9D9D9" stroke="white" stroke-width="4"/>
+                        <path d="M11 22.5714L16.7143 28.2857L31 14" stroke="#A5A5A5" stroke-width="2.14286" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>  
+                    </div>
+                    <h3>від 200 000 € <br>
+                      до 250 000 €</h3>
+                  </div>
+                </label>
+              </div>
+              <div class="radio">
+                <label><input type="radio" name="budget" value="від 150 000 € до 200 000 €" class="required">
+                  <div class="formStepContent formStepContentBorder">
+                    <div class="positionLike positionLikeColumn">
+                      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="21" cy="21" r="19" fill="#D9D9D9" stroke="white" stroke-width="4"/>
+                        <path d="M11 22.5714L16.7143 28.2857L31 14" stroke="#A5A5A5" stroke-width="2.14286" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>  
+                    </div>
+                    <h3>від 150 000 € <br>
+                      до 200 000 €</h3>
+                  </div>
+                </label>
+              </div>
+              <div class="radio">
+                <label><input type="radio" name="budget" value="Більше 250 000 €" class="required">
+                  <div class="formStepContent formStepContentBorder">
+                    <div class="positionLike positionLikeColumn">
+                      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="21" cy="21" r="19" fill="#D9D9D9" stroke="white" stroke-width="4"/>
+                        <path d="M11 22.5714L16.7143 28.2857L31 14" stroke="#A5A5A5" stroke-width="2.14286" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>  
+                    </div>
+                    <h3>Більше 250 000 €</h3>
+                  </div>
+                </label>
+              </div>
+              <div class="radio positionLikeColumnWidth">
+                <label><input type="radio" name="budget" value="Під отримання громадянства" class="required">
+                  <div class="formStepContent formStepContentBorder">
+                    <div class="positionLike positionLikeColumn">
+                      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="21" cy="21" r="19" fill="#D9D9D9" stroke="white" stroke-width="4"/>
+                        <path d="M11 22.5714L16.7143 28.2857L31 14" stroke="#A5A5A5" stroke-width="2.14286" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>  
+                    </div>
+                    <h3>Під отримання громадянства</h3>
+                  </div>
+                </label>
+              </div>
+            </div>
+            <div class="btnContainer">
+              <button type="button" class="backButton" disabled>Назад</button>
+              <button type="button" class="nextButton" disabled>Далі
+                <img src="img/btnStep.png" alt="">
+              </button>
+            </div>
+          </div>
+      
+          <!--Чи потрібна росрочка чи кредит?-->
+          <div id="step5" class="styleContainer" style="display: none;">
+            <h2>Чи потрібна росрочка чи кредит?</h2>
+            <div class="formContainerFlex">
+              <div class="radio">
+                <label><input type="radio" name="credit" value="Так" class="required">
+                  <div class="formStepContent formStepContentBorder">
+                    <div class="positionLike positionLikeColumn">
+                      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="21" cy="21" r="19" fill="#D9D9D9" stroke="white" stroke-width="4"/>
+                        <path d="M11 22.5714L16.7143 28.2857L31 14" stroke="#A5A5A5" stroke-width="2.14286" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>  
+                    </div>
+                  <h3>Так</h3>
+                </div>
+                </label>
+              </div>
+              <div class="radio">
+                <label><input type="radio" name="credit" value="Ні" class="required">
+                  <div class="formStepContent formStepContentBorder">
+                    <div class="positionLike positionLikeColumn">
+                      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="21" cy="21" r="19" fill="#D9D9D9" stroke="white" stroke-width="4"/>
+                        <path d="M11 22.5714L16.7143 28.2857L31 14" stroke="#A5A5A5" stroke-width="2.14286" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>  
+                    </div>
+                    <h3>Ні</h3>
+                  </div>
+                </label>
+              </div>
+            </div>
+            <div class="btnContainer">
+              <button type="button" class="backButton" disabled>Назад</button>
+              <button type="button" class="nextButton" disabled>Далі
+                <img src="img/btnStep.png" alt="">
+              </button>
+            </div>
+          </div>
+      
+          <!--У який срок плануєте купувати нерухомість?-->
+          <div id="step6" class="styleContainer" style="display: none;">
+            <h2>У який срок плануєте купувати нерухомість?</h2>
+            <div class="formContainerTabs">
+              <div class="formContainerFlex">
+                <div class="radio">
+                  <label><input type="radio" name="term" value="Потрібно терміново" class="required">
+                  <div class="formStepContent formStepContentBorder">
+                    <div class="positionLike positionLikeColumn">
+                      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="21" cy="21" r="19" fill="#D9D9D9" stroke="white" stroke-width="4"/>
+                        <path d="M11 22.5714L16.7143 28.2857L31 14" stroke="#A5A5A5" stroke-width="2.14286" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>  
+                    </div>
+                    <h3>Потрібно терміново</h3>
+                  </div>
+                  </label>
+                </div>
+                <div class="radio">
+                  <label><input type="radio" name="term" value="Упродовж 3 місяців " class="required">
+                    <div class="formStepContent formStepContentBorder">
+                      <div class="positionLike positionLikeColumn">
+                        <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="21" cy="21" r="19" fill="#D9D9D9" stroke="white" stroke-width="4"/>
+                          <path d="M11 22.5714L16.7143 28.2857L31 14" stroke="#A5A5A5" stroke-width="2.14286" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>  
+                      </div>
+                      <h3>Упродовж 3 місяців </h3>
+                    </div>
+                  </label>
+                </div>
+                <div class="radio">
+                  <label><input type="radio" name="term" value="Упродовж 6 місяців " class="required">
+                    <div class="formStepContent formStepContentBorder">
+                      <div class="positionLike positionLikeColumn">
+                        <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="21" cy="21" r="19" fill="#D9D9D9" stroke="white" stroke-width="4"/>
+                          <path d="M11 22.5714L16.7143 28.2857L31 14" stroke="#A5A5A5" stroke-width="2.14286" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>  
+                      </div>
+                      <h3>Упродовж 6 місяців </h3>
+                    </div>
+                  </label>
+                </div>
+              </div>
+              <div class="formContainerFlexImg">
+                <img src="img/term.png" alt="planning">
+              </div>
+            </div>
+            <div class="btnContainer">
+              <button type="button" class="backButton" disabled>Назад</button>
+              <button type="button" class="nextButton" disabled>Далі
+                <img src="img/btnStep.png" alt="">
+              </button>
+            </div>
+          </div>
+      
+          <!--Підбірка майже готова-->
+          <div id="step7" class="styleContainer" style="display: none;">
+            <p>Підбірка майже готова</p>
+            <h2>Куди хочете її отримати?</h2>
+            <div class="contact-form-input name">
+              <input type="text" name="name" placeholder="Ім'я" required>
+            </div>
+            <div class="contact-form-input phone">
+              <input type="tel" name="phone" placeholder="Телефон" required>
+            </div>
+            <div class="contact-form-input">
+              <select name="contact-method">
+                <option value="" disabled selected>Як зв'язатися</option>
+                <option value="Телефон">Телефон</option>
+                <option value="Viber">Вайбер</option>
+                <option value="Телеграме">Телеграм</option>
+              </select>
+            </div>
+            <div class="btnContainer">
+              <button type="button" class="backButton" disabled>Назад</button>
+              <button type="submit" id="#submitButton" class="submitButton">Отримати підбірку</button>
+            </div>
+          </div>
+          
+        </form>
+      </div>
+    </div>
+    <img src="img/home.png" alt="Слон" class="bannerImg">
+    <img src="img/homeMobile.png" alt="Слон" class="bannerImgMobile">
+  </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="form.js"></script>
+</body>
+</html>
