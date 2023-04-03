@@ -95,3 +95,4 @@ $(document).ready(function() {
   $("#form input[type='radio'], #form input[type='checkbox']").change(canProceed);
 
 });
+

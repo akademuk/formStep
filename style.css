@@ -107,7 +107,7 @@ body {
   line-height: 130%;
   color: #123777;
   display: flex;
-  align-items: center;
+text-align: left;
   margin: 0;
   margin-top: -20px;
 }
@@ -391,7 +391,12 @@ select option {
   left: 50%;
   transform: translateX(-50%);
 }
-
+.formStepContentImg {
+  cursor: pointer;
+}
+input {
+  cursor: pointer;
+}
 input[type=radio]:checked + .formStepContent .formStepContentImg {
   border: 4px solid #6BD3F0;
   border-radius: 16px;
@@ -536,6 +541,48 @@ input[type=radio]:checked + .formStepContentBorder {
 
 
 
+/* Модальное окно */
+.modal {
+  display: none; /* скрыть по умолчанию */
+  position: fixed; /* позиционирование по фиксированным координатам */
+  z-index: 100000; /* над остальным контентом */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4); /* затемнение фона */
+  align-items: center;
+  justify-content: center;
+}
+
+/* Контент модального окна */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 25%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Закрыть кнопку */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
 
 
 
@@ -561,7 +608,25 @@ input[type=radio]:checked + .formStepContentBorder {
 
 
 
-
+@media(max-width: 1400px) {
+  .bannerContentLeft {
+    margin-right: 25px;
+    flex-direction: column;
+    display: flex;
+    margin-bottom: 30px;
+    width: 50%;
+  }
+  .banner {
+    padding: 20px 64px 20px 64px;
+  }
+  .bannerContentRight {
+    width: 50%;
+    min-width: auto;
+  }
+  .bannerContent {
+    max-width: 100%;
+  }
+}
 
 
 
@@ -630,9 +695,15 @@ input[type=radio]:checked + .formStepContentBorder {
   .logotype {
     margin-bottom: 45px;
   }
+  .bannerContent {
+    max-width: 100%;
+  }
   .bannerContentLeft h1 {
     font-size: 18px;
     line-height: 130%;
+  }
+  .bannerContentRight {
+    min-width: 100%;
   }
   .bannerContentLeft h1 span {
     font-size: 63px;
@@ -682,6 +753,19 @@ input[type=radio]:checked + .formStepContentBorder {
     line-height: 15px;
     text-align: left;
   }
+  .backButton {
+    margin-bottom: 20px;
+  }
+  #form {
+    width: 100%;
+  }
+  #step7 {
+    min-width: 100%;
+  }
+  .bannerContentRight  {
+    width: 100%;
+    box-sizing: border-box;
+  }
   .bannerContentLeftContainerSection p {
     font-size: 16px;
     line-height: 20px;
@@ -691,6 +775,86 @@ input[type=radio]:checked + .formStepContentBorder {
     width: 100%;
     box-sizing: border-box;
   }
+  .styleContainer h2 {
+    font-size: 20px;
+    line-height: 110%;
+    margin-bottom: 24px;
+  }
+  .formStepContent h3 {
+    font-size: 14px;
+  }
+  .nextButton {
+    margin-top: 8px;
+  }
+  .btnContainer {
+    flex-direction: column;
+  }
+  #step5 {
+    min-width: 100%;
+    width: 100%;
+  }
+  .btnContainer button {
+    width: 100%;
+  }
+  #step4 .formContainerFlex {
+    flex-direction: column;
+  }
+  #step4 .formContainerFlex .radio {
+    width: 100%;
+  }
+  .formContainerTabs {
+    flex-direction: column;
+    height: 100%;
+  }
+  .formContainerTabs .formContainerFlex {
+    width: 100%;
+    margin-right: 0;
+  }
+  .formContainerFlexImg {
+    width: 100%;
+  }
+  #step5 .formContainerFlex {
+    flex-direction: column;
+  }
+  #step5 .formContainerFlex .radio {
+    width: 100%;
+  }
+  #step6 .formContainerTabs {
+    flex-direction: column-reverse;
+  }
+  #step6 .formContainerTabs .formContainerFlexImg {
+    height: 125px;
+    margin-bottom: 24px;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+  #step3 .formContainerTabs .formContainerFlexImg {
+    height: 185px;
+    border-radius: 16px;
+    overflow: hidden;
+    margin-top: 24px;
+  }
+  #step3 .formContainerTabs .formContainerFlexImg img{
+    height:100%;
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+  }
+  #step6 .formContainerTabs .formContainerFlexImg img{
+    height:100%;
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+  }
+  .nextButton {
+    margin-top: 0 !important;
+  }
+}
+
+@media(max-width: 500px) {
+.positionLike2 {
+  bottom: 35px;
+}
 }
 
 @media(max-width: 400px) {
